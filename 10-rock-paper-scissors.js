@@ -57,10 +57,10 @@ function playGame(userChoice) {
     .innerHTML = 'Computer';
 
   document.querySelector('.computer-img')
-    .src = `${computerChoice}.jpg`;
+    .src = `images/${computerChoice}.jpg`;
 
   document.querySelector('.user-img')
-    .src = `${userChoice}.jpg`
+    .src = `images/${userChoice}.jpg`
   
 }
 
