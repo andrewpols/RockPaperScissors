@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="10-rock-paper-scissors.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <p class="game-title">Rock Paper Scissors</p>
+    <div class="container">
+      <div class="img-flex">
+        <div class="img-container">
+          <button class="option-button" onclick=";
+            playGame('rock');
+          "> <img class="option-img" src="rock.jpg">
+          </button>
+        </div>  
+
+        <div class="img-container">
+          <button class="option-button" onclick="
+            playGame('paper');
+          "><img class="option-img" src="paper.jpg"></button>
+        </div>
+
+        <div class="img-container">
+          <button class="option-button" onclick="
+            playGame('scissors');
+          "><img class="option-img" src="scissors.jpg"></button>
+        </div>  
+      </div>
+
+      <div class="info">
+        <p class="js-result result"></p>
+
+        <div class="moves-container">
+          <p class="user-move"></p> <img class="user-img" src="">
+          <img class="computer-img" src=""> <p class="computer-move"></p> 
+        </div>
+
+        <p class="js-score"></p>
+        
+        <button class="reset-button" onclick="
+          score.wins = 0;
+          score.losses = 0;
+          score.ties = 0;
+          localStorage.removeItem('score');
+          updateScoreElement();
+        ">Reset Score</button>
+        
+        <a class="img-link" href="https://www.github.com" target="_blank" class="source-code">
+          <img class="git-img" src="github.jpg">
+        </a>
+
+        <a href="https://www.github.com" target="_blank" class="source-code">Source Code</a>
+      </div>
+
+      <script src="10-rock-paper-scissors.js"></script>
+    </div>  
+  </body>
+</html>
